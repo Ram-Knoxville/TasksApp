@@ -13,6 +13,9 @@
 		21F218382AAC2B5600525A3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F218372AAC2B5600525A3C /* ContentView.swift */; };
 		21F2183A2AAC2B5800525A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F218392AAC2B5800525A3C /* Assets.xcassets */; };
 		21F2183E2AAC2B5800525A3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F2183D2AAC2B5800525A3C /* Preview Assets.xcassets */; };
+		21F218472AAC2D0F00525A3C /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 21F218442AAC2D0F00525A3C /* sound-rise.mp3 */; };
+		21F218482AAC2D0F00525A3C /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 21F218452AAC2D0F00525A3C /* sound-tap.mp3 */; };
+		21F218492AAC2D0F00525A3C /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 21F218462AAC2D0F00525A3C /* sound-ding.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,10 @@
 		21F218392AAC2B5800525A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21F2183B2AAC2B5800525A3C /* TasksApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TasksApp.entitlements; sourceTree = "<group>"; };
 		21F2183D2AAC2B5800525A3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		21F218442AAC2D0F00525A3C /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		21F218452AAC2D0F00525A3C /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
+		21F218462AAC2D0F00525A3C /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		21F218502AAC2DCF00525A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +63,16 @@
 		21F2182F2AAC2B5600525A3C /* TasksApp */ = {
 			isa = PBXGroup;
 			children = (
+				21F218502AAC2DCF00525A3C /* Info.plist */,
+				21F2184E2AAC2D5200525A3C /* Style */,
+				21F2184D2AAC2D4B00525A3C /* Utility */,
+				21F2184C2AAC2D4400525A3C /* Extension */,
+				21F2184A2AAC2D1700525A3C /* Sound */,
 				21F218302AAC2B5600525A3C /* TasksAppApp.swift */,
-				21F218322AAC2B5600525A3C /* Persistence.swift */,
-				21F218372AAC2B5600525A3C /* ContentView.swift */,
+				21F2184F2AAC2D8C00525A3C /* Module */,
+				21F2184B2AAC2D3A00525A3C /* View */,
 				21F218392AAC2B5800525A3C /* Assets.xcassets */,
 				21F2183B2AAC2B5800525A3C /* TasksApp.entitlements */,
-				21F218342AAC2B5600525A3C /* TasksApp.xcdatamodeld */,
 				21F2183C2AAC2B5800525A3C /* Preview Content */,
 			);
 			path = TasksApp;
@@ -73,6 +84,54 @@
 				21F2183D2AAC2B5800525A3C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		21F2184A2AAC2D1700525A3C /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				21F218462AAC2D0F00525A3C /* sound-ding.mp3 */,
+				21F218442AAC2D0F00525A3C /* sound-rise.mp3 */,
+				21F218452AAC2D0F00525A3C /* sound-tap.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		21F2184B2AAC2D3A00525A3C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21F218372AAC2B5600525A3C /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21F2184C2AAC2D4400525A3C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		21F2184D2AAC2D4B00525A3C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		21F2184E2AAC2D5200525A3C /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		21F2184F2AAC2D8C00525A3C /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				21F218322AAC2B5600525A3C /* Persistence.swift */,
+				21F218342AAC2B5600525A3C /* TasksApp.xcdatamodeld */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +192,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F218492AAC2D0F00525A3C /* sound-ding.mp3 in Resources */,
+				21F218472AAC2D0F00525A3C /* sound-rise.mp3 in Resources */,
 				21F2183E2AAC2B5800525A3C /* Preview Assets.xcassets in Resources */,
+				21F218482AAC2D0F00525A3C /* sound-tap.mp3 in Resources */,
 				21F2183A2AAC2B5800525A3C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +339,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TasksApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -285,8 +349,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -295,10 +358,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ram.TasksApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,6 +380,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TasksApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -323,8 +390,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -333,10 +399,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ram.TasksApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
